@@ -20,7 +20,7 @@ The reason we decided on this question is because we want to investigate whether
 
 <center><img src="food critic.jfif" alt="Picture of a food critic" height="500" width="500"></center>
 
-Another important aspect of this question is determining the cutoff for a low or high recipe. In order to find this value, we decided to plot the distribution of the n_ingredients column so we could get a general sense of how the recipes in this dataset compare to one another in terms of their ingredient count. The histogram we generated is included below in the Cleaning and EDA section. As you can see, the median of this distribution is around 9. Therefore, we decided to classify recipes with an ingredient count of **9 or less as simple** and recipes with an ingredient count **greater than 9 as complex**. Additionally, choosing the median as the cutoff would help eliminate any sampling bias since we would have an equal amount of data on either side of the median (the median is the 50th percentile). Lastly, 9 ingredients is intuitively a good cutoff. It is reasonable to assume, in general, that a dish with less than 9 ingredients should be fairly simple and easy to make compared to dishes with 10 or more ingredients.
+Another important aspect of this question is determining the cutoff for a low or high recipe. In order to find this value, we decided to plot the distribution of the ``n_ingredients`` column so we could get a general sense of how the recipes in this dataset compare to one another in terms of their ingredient count. The histogram we generated is included below in the Cleaning and EDA section. As you can see, the median of this distribution is around 9. Therefore, we decided to classify recipes with an ingredient count of **9 or less as simple** and recipes with an ingredient count **greater than 9 as complex**. Additionally, choosing the median as the cutoff would help eliminate any sampling bias since we would have an equal amount of data on either side of the median (the median is the 50th percentile). Lastly, 9 ingredients is intuitively a good cutoff. It is reasonable to assume, in general, that a dish with less than 9 ingredients should be fairly simple and easy to make compared to dishes with 10 or more ingredients.
 
 ### About the data
 
@@ -41,7 +41,10 @@ The dataset contains 13 columns which are the following:
 | steps | text for recipe steps, in order|
 | description | user-provided description |
 | ingredients	| ingredients required for recipe |
-| n_ingredients |	number of ingredients required for recipe |
+| 
+
+
+gredients |	number of ingredients required for recipe |
 | avg_rating | average rating given by users |
 
 We used Python and the following libraries to preprocess and analyze the data:
@@ -166,8 +169,6 @@ Our response variable is the recipe rating, which ranges from 1 to 5. We chose t
 The dataset used for this analysis is collected from <a href="food.com">food.com</a>. and contains information on a variety of recipes, including their ingredients, cooking times, and user ratings. By exploring this data, we hope to gain insights into the factors that contribute to a recipe’s success and popularity.
 
 We hope that this project will help food enthusiasts and cooking enthusiasts discover new and highly-rated recipes with ease.
-
-Check out our exploratory data analysis on the same dataset <a href="https://adityaarun2.github.io/exploratory-data-analysis-project/" target="_blank">here</a>!
 
 <center><img src="cook.jpeg" alt="Picture of food getting cooked" height="300" width="600"></center>
 
